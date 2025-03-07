@@ -1,15 +1,18 @@
-import Hero from './Hero/Hero.jsx';
-import Special from './Special/Special.jsx';
-import Testimonials from './Testimonials/Testimonials.jsx';
+import Hero from './Hero.jsx';
+import Special from './Special.jsx';
+import Testimonials from './Testimonials.jsx';
+import Opens from "./Opens.jsx";
+import Location from './Location.jsx';
 
-import styles from './Home.module.css';
 
 const Home = () => {
 	return (
-		<main className={styles}>
+		<main>
 			<Hero />
 			<Special />
 			<Testimonials />
+			<Opens />
+			<Location />
 		</main>
 	)
 }

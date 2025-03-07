@@ -1,6 +1,3 @@
-// IMPORT: CSS Style
-import styles from "./OpeningHours.module.css";
-
 // ARRAY:
 const openingHours = [
 	{day: "Monday", hours: "11:00 AM - 10:00 PM"},
@@ -14,13 +11,13 @@ const openingHours = [
 
 const OpeningHours = () => {
 	return (
-		<div className={styles.container}>
-      <h2 className={styles.title}>Opening Hours</h2 >
-      <ul className={styles.list}>
+		<div className="">
+      <h2 className="">Opening Hours</h2 >
+      <ul className="">
         {openingHours.map((item, index) => (
-	        <li key={index} className={styles.item}>
-            <span className={styles.day}>{item.day}</span >
-            <span className={styles.hours}>{item.hours}</span >
+	        <li key={index} className="">
+            <span className="">{item.day}</span >
+            <span className="">{item.hours}</span >
           </li >
         ))}
       </ul >

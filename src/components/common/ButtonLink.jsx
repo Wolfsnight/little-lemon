@@ -1,9 +1,11 @@
-import styles from './ButtonLink.module.css';
-
 const ButtonLink = ({label, href}) => {
 	return (
-		<a href={href} className={styles.a}>
-      <button >{label}</button >
+		<a
+			href={href}
+		>
+      <button className="bg-lemonYellow active:bg-lemonGreen active:text-white rounded-full py-1 px-6 lg:text-xl">
+	      {label}
+			</button >
     </a >
 	);
 }

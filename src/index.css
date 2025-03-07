@@ -5,68 +5,25 @@
 /** IMPORT: Tailwind **/
 @import "tailwindcss";
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@theme {
+  --color-lemonYellow: #f4ce14;
+  --color-lemonGreen: #495E57;
 }
 
+
 body {
-  max-width: 80rem;
-
-  display: flex;
-  flex-direction: column;
-
-  margin: 0 auto;
-
   font-family: "Karla", cursive;
   font-weight: 400;
   font-size: 1rem;
   font-style: normal;
   letter-spacing: 1px;
-
-
-}
-
-header, footer, section {
-  padding: 3rem 2rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Markazi Text", serif;
-  font-weight: normal;
-  font-style: normal;
 }
 
-h1 {
-  font-size: 3rem;
-  padding-bottom: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-/** Links: **/
-a {
-  font-size: 1rem;
-  text-decoration: none;
-
-  color: black;
-}
-
-a:hover {
-  font-weight: bold;
+footer {
+  background: #495E57;
+  color: white;
 }

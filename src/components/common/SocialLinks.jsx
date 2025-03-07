@@ -1,9 +1,6 @@
 // IMPORT: Font Awesome
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-// IMPORT: CSS-Style
-import styles from "./SocialLinks.module.css";
-
 const socialLinks = [
 	{
 		name: "Facebook",
@@ -34,24 +31,27 @@ const socialLinks = [
 
 const SocialLinks = () => {
 	return (
-		<nav className={styles.socialLinks}>
-      <h2 >Follow Us</h2 >
+		<nav className="flex flex-col">
+			<h2 className="text-3xl font-bold text-center pb-4">
+				Follow Us
+			</h2 >
+			<div className="flex justify-around">
+				{socialLinks.map((link, index) => (
+					<a
+						href={link.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="flex flex-col text-2xl"
+						key={index}
+					>
+						<FontAwesomeIcon icon={link.icon} />
+						<p className="text-xs pt-2">
+							{link.name}
+						</p >
 
-        {socialLinks.map((link, index) => (
-
-					<div key={index}>
-		        <a
-			        href={link.url}
-			        target="_blank"
-			        rel="noopener noreferrer"
-		        >
-			        <p >{link.name}</p >
-	            <FontAwesomeIcon icon={link.icon} />
-						</a >
-
-
-					</div >
-        ))}
+					</a >
+				))}
+			</div >
 		</nav >
 	);
 };

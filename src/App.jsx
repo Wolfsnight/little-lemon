@@ -2,8 +2,8 @@
 import "./fontAwesomeSetup";
 
 import {Routes, Route} from "react-router-dom";
-import Header from "./components/common/Header/Header.jsx";
-import Footer from "./components/common/Footer/Footer.jsx";
+import Header from "./components/common/Header.jsx";
+import Footer from "./components/common/Footer.jsx";
 import Home from "./components/pages/Home/Home.jsx";
 
 const About = () => <h1 >ℹ️ The About Site is not available</h1 >;

@@ -1,7 +1,6 @@
 import {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
-import styles from "./NavBar.module.css";
 import {Link} from "react-router-dom";
 
 
@@ -17,26 +16,48 @@ const NavBar = () => {
 	};
 
 	return (
-		<nav className={styles.navbar}>
-
-      <button className={styles.hamburger} onClick={toggleMenu}>
+		<nav className="">
+			{/* Burger Button */}
+      <
+				button
+	      className="flex items-center gap-3 text-2xl focus:outline-none lg:hidden"
+	      onClick={toggleMenu}
+      >
 	      MENU
-        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+        <FontAwesomeIcon
+	        icon={isMenuOpen ? faTimes : faBars}
+        />
       </button >
 
-      <ul className={isMenuOpen ? styles.openMenu : styles.hideMenu}>
-	      <li >
-		      <Link to="/" onClick={closeMenu}>
-			      Home
+			{/* Menü */}
+			<ul
+				className={
+				`fixed top-24 left-0 w-full h-full flex flex-col justify-center items-center gap-5 bg-white text-3xl 
+				lg:visible lg:static lg:flex-row lg:text-lg
+				${isMenuOpen ? "visible" : "invisible"}`
+			}
+			>
+				<li >
+					<Link
+						to="/"
+						onClick={closeMenu}
+					>
+						Home
 					</Link >
 				</li >
 				<li >
-					<Link to="/about" onClick={closeMenu}>
+					<Link
+						to="/about"
+						onClick={closeMenu}
+					>
 						About
 					</Link >
 				</li >
 				<li >
-					<Link to="/menu" onClick={closeMenu}>
+					<Link
+						to="/menu"
+						onClick={closeMenu}
+					>
 						Menu
 					</Link >
 				</li >
@@ -55,8 +76,8 @@ const NavBar = () => {
 						Login
 					</Link >
 				</li >
-      </ul >
-    </nav >
+			</ul >
+		</nav >
 	);
 };
 
