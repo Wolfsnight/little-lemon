@@ -2,7 +2,7 @@ import Hero from './Hero.jsx';
 import Special from './Special.jsx';
 import Testimonials from './Testimonials.jsx';
 import Opens from "./Opens.jsx";
-import Location from './Location.jsx';
+import Chicago from "@/components/pages/Home/Chicago.jsx";
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
 			<Special />
 			<Testimonials />
 			<Opens />
-			<Location />
+			<Chicago />
 		</main>
 	)
 }

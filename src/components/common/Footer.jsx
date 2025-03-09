@@ -7,7 +7,7 @@ const Footer = () => {
 		<footer className="p-8">
 			<SocialLinks />
 			<p className="text-center pt-8 lg:pt-12">
-				In made with ❤️ by Markus Spiegler
+				In made with ❤️ by Markus Spiegler | Copyright © 2025
 			</p>
 
 		</footer >
