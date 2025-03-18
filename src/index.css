@@ -1,0 +1,33 @@
+/** IMPORT: Schriften **/
+@import url(
+"https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap");
+
+/** IMPORT: Tailwind **/
+@import "tailwindcss";
+
+@theme {
+  --color-lemonYellow: #f4ce14;
+  --color-lemonGreen: #495E57;
+}
+
+
+body {
+  font-family: "Karla", cursive;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Markazi Text", serif;
+}
+
+footer {
+  background: #495E57;
+  color: white;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> a529697 (Initial commit mit nur little-lemon)
