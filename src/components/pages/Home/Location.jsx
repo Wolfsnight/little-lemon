@@ -8,9 +8,7 @@ const Location = () => {
 			>
 				Our Location
 			</h2>
-			<div className=
-				     "flex flex-row justify-between items-center gap-4
-				     lg:flex-col-reverse lg:gap-12">
+			<div className="flex flex-row justify-between items-center gap-4 lg:flex-col-reverse lg:gap-12">
 				<address className="w-40 lg:w-full lg:text-xl lg:text-center">
 					<p className="font-bold pb-2">
 						Little Lemon
@@ -25,10 +23,7 @@ const Location = () => {
 				<img
 					src={map}
 					alt=""
-					className=
-						"w-40 h-30 object-cover object-center overflow-hidden
-						lg:w-240 lg:h-120"
-				/>
+					className="w-40 h-30 object-cover object-center overflow-hidden lg:w-240 lg:h-120"/>
 			</div>
 
 		</section>

@@ -13,9 +13,9 @@ function Card({title, price, description, image}) {
 					<h3 className="text-xl font-bold">
 						{title}
 					</h3>
-					 <p className="text-red-700">
-						 {price}
-					 </p >
+					<p className="text-red-700">
+						{price}
+					</p >
 				</div >
 				<p className="pb-8">
 					{description}
