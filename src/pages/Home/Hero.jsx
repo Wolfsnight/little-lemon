@@ -4,10 +4,8 @@ import ButtonLink from "@/common/ButtonLink.jsx";
 
 const Hero = () => {
   return (
-    <section
-      className="flex flex-col-reverse gap-8 pb-16 lg:flex-row lg:px-16 lg:py-12">
-      <div
-        className="flex flex-col items-center gap-4 lg:gap-12 lg:px-12">
+    <section className="flex flex-col-reverse gap-8 pb-16 lg:flex-row lg:px-16 lg:py-12">
+      <div className="flex flex-col items-center gap-4 lg:gap-12 lg:px-12">
         <h1 className="text-6xl text-bold">Little Lemon</h1>
 
         <p className="text-center px-4 pb-12">
@@ -18,7 +16,7 @@ const Hero = () => {
 
         <ButtonLink
           label="Reserve a Table"
-          href=""
+          href="/reservation"
         />
       </div>
 

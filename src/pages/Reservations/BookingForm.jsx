@@ -29,7 +29,6 @@ function BookingForm({availableTimes, dispatch, submitForm}) {
       onSubmit={handleSubmit}
       className="flex flex-col items-center gap-4 pb-12"
       aria-labelledby="booking-form-title">
-      <h2 id="booking-form-title">Table Reservation</h2>
       {/* Date Selection */}
       <label htmlFor="res-date">Choose date</label>
       <input
@@ -78,10 +77,10 @@ function BookingForm({availableTimes, dispatch, submitForm}) {
         className="w-60 border border-gray-300 rounded-md p-2"
         id="guests"
         value={guests}
-        onChange={(e) => setGuests(parseInt(e.target.value, 10))}
+        onChange={(e) => setGuests(parseInt(e.target.value, 8))}
         aria-label="Select number of guests">
         <option value="">How many guests?</option>
-        {[...Array(10).keys()].map((num) => (
+        {[...Array(8).keys()].map((num) => (
           <option
             key={num + 1}
             value={num + 1}>
@@ -93,7 +92,7 @@ function BookingForm({availableTimes, dispatch, submitForm}) {
         <p style={{color: "red"}}>Please select the number of guests.</p>
       )}
       <p className="w-80 text-center text-gray-600 text-xs">
-        If you have more than 10 guests, please call us at{" "}
+        If you have more than 8 guests, please call us at{" "}
         <a
           href="tel:+123456789"
           className="text-blue-500 underline">
