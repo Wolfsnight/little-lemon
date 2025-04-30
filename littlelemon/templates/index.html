@@ -1,8 +1,96 @@
-<html>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Capstone Project</title>
+        <meta charset="UTF-8" />
+        <title>Little Lemon API Overview</title>
+        <style>
+            body {
+                font-family: "Segoe UI", sans-serif;
+                background-color: #f4f4f4;
+                padding: 2rem;
+                max-width: 700px;
+                margin: auto;
+            }
+            h1 {
+                color: #444;
+            }
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            li {
+                background: white;
+                margin: 1rem 0;
+                padding: 1rem;
+                border-left: 5px solid #ffb703;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: #219ebc;
+            }
+            small {
+                display: block;
+                margin-top: 0.3rem;
+                color: #555;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="text-align: center">Welcome To LittleLemon Restaurant</h1>
+        <h1>Little Lemon API – Peer Test Overview</h1>
+        <ul>
+            <li>
+                <a href="/api/menu-items/">Menu Items (GET & POST)</a>
+                <small
+                    >Lists all available menu items or allows you to create a
+                    new one.</small
+                >
+            </li>
+            <li>
+                <a href="/api/menu-items/1/"
+                    >Menu Item Detail (GET, PUT, DELETE)</a
+                >
+                <small
+                    >Access or update a specific item (replace
+                    <code>1</code> with any ID).</small
+                >
+            </li>
+            <li>
+                <a href="/booking/tables/">Booking API</a>
+                <small
+                    >Manage table bookings (requires token
+                    authentication).</small
+                >
+            </li>
+            <li>
+                <a href="/api-token-auth/">Login (Token)</a>
+                <small
+                    >Send POST with username & password to receive your
+                    token.</small
+                >
+            </li>
+            <li>
+                <a href="/auth/users/">User Registration (Djoser)</a>
+                <small>Register a new user via Djoser API.</small>
+            </li>
+            <li>
+                <a href="/auth/token/login/">Login (Djoser)</a>
+                <small>Login and get token using Djoser.</small>
+            </li>
+            <li>
+                <a href="/auth/token/logout/">Logout (Djoser)</a>
+                <small>Invalidate your token and log out.</small>
+            </li>
+            <li>
+                <a href="/admin/">Django Admin Panel</a>
+                <small
+                    >Login with <strong>admin / admin</strong> to access the
+                    database backend.</small
+                >
+            </li>
+        </ul>
     </body>
 </html>
